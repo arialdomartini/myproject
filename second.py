@@ -42,4 +42,4 @@ def tokenize(source_code):
     )
     expanded_code = reduce(lambda a, kv:
                            a.replace(*kv), replacements, source_code)
-    return expanded_code.split()
+    return expanded_code
